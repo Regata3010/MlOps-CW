@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  backend:
+    build: ./backend
+    image: regata3010-dockerlab-backend-v1.1
+    ports:
+      - "8080:8080"
+  
+  frontend:
+    build: ./frontend
+    image: regata3010-dockerlab-frontend-v1.3
+    ports:
+      - "8502:8502"
+    environment:
+      - BACKEND_URL=http://backend:8080
+    depends_on:
+      - backend

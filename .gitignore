@@ -1,0 +1,77 @@
+# ── Python ────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ── Virtual Environments ──────────────────────────────────
+.venv/
+venv/
+venv*/
+env/
+.v1/
+dockerlabvenv/
+fastapivenv/
+streamlitvenv/
+actionsvenv/
+hvenv/
+venv39/
+*venv/
+*venv*/
+
+# ── Trained Models ────────────────────────────────────────
+models/*.pkl
+models/*.joblib
+# keep the models/ directory itself
+!models/.gitkeep
+
+# ── Jupyter ───────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb
+
+# ── Environment & Secrets ─────────────────────────────────
+.env
+.env.*
+*.pem
+*.key
+
+# ── Terraform ─────────────────────────────────────────────
+**/.terraform/
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+.terraform.lock.hcl
+crash.log
+override.tf
+override.tf.json
+
+# ── macOS ─────────────────────────────────────────────────
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# ── Docker ────────────────────────────────────────────────
+# keep Dockerfiles and docker-compose — exclude runtime artifacts
+.docker/
+
+# ── Airflow ───────────────────────────────────────────────
+logs/
+airflow.db
+airflow-webserver.pid
+standalone_admin_password.txt
+Airflow Lab/config/airflow.cfg
+
+# ── Misc ──────────────────────────────────────────────────
+*.log
+*.tmp
+*.swp
+*.bak
+.pytest_cache/
+.coverage
+htmlcov/

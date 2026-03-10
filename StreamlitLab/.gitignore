@@ -1,0 +1,6 @@
+streamlitenv/
+__pycache__/
+*.pyc
+.streamlit/
+models/*.pkl
+hvenv/
